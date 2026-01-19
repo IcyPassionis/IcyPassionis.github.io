@@ -1,0 +1,46 @@
+#navbar {
+    background-color: hsla(200, 10%, 10%, 0.4);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-border {
+    border-radius: 50px;
+    border-width: 1rem;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: hsla(200, 10%, 30%, 0.4);
+    border-style: inset;
+}
+
+#navbar-fixed {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+}
+
+.navbar-button {
+    background-color: transparent;
+
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.navbar-button-text {
+    color: white;
+    font-size: 1rem;
+    text-shadow: 1px 5px 15px black;
+}
+
+.navbar-button:hover {
+    background-color: hsla(200, 10%, 20%, 0.4);
+}
