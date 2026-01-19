@@ -10,8 +10,18 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
 .margin-top-large {
     margin-top: 2rem;
+}
+
+.margin-top-huge {
+    margin-top: 4rem;
 }
 
 .margin-bottom-small {
@@ -26,8 +36,13 @@ h1 {
     margin-bottom: 2rem;
 }
 
+
 .h1-shadow {
     text-shadow: 1px 2px 20px black;
+}
+
+.h2-shadow {
+    text-shadow: 1px 2px 15px black;
 }
 
 .text-align-center {
@@ -36,10 +51,13 @@ h1 {
 
 .text-regular {
     color: white;
-    font-weight: normal;
     font-size: 1rem;
 }
 
 .text-regular-shadow {
     text-shadow: 1px 2px 10px black;
+}
+
+.text-medium-weight {
+    font-weight: 500;
 }
