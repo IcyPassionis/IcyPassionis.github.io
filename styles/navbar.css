@@ -1,13 +1,18 @@
 #navbar {
     background-color: hsla(200, 10%, 10%, 0.4);
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+#navbar_menu {
     display: flex;
     flex-direction: row;
-
 }
 
 .navbar-border {
@@ -39,6 +44,11 @@
     color: white;
     font-size: 1rem;
     text-shadow: 1px 5px 15px black;
+}
+
+.navbar-text-important {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .navbar-button:hover {
