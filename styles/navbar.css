@@ -20,7 +20,7 @@
     border-style: inset;
 }
 
-#navbar-fixed {
+#navbar-sticky {
     display: flex;
     position: sticky;
     justify-content: center;
