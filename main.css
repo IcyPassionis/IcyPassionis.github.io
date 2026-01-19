@@ -6,8 +6,28 @@ body {
 
 h1 {
     font-size: 3rem;
-    text-shadow: 1px 2px 20px black;
     color: white;
+    margin: 0;
+}
+
+.margin-top-large {
+    margin-top: 2rem;
+}
+
+.margin-bottom-small {
+    margin-bottom: 0.5rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-large {
+    margin-bottom: 2rem;
+}
+
+.h1-shadow {
+    text-shadow: 1px 2px 20px black;
 }
 
 .text-align-center {
