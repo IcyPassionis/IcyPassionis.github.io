@@ -17,11 +17,11 @@
 
 .navbar-border {
     border-radius: 50px;
-    border-width: 1rem;
+    border-width: 0.7rem;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-color: hsla(200, 10%, 30%, 0.4);
+    border-color: hsla(200, 10%, 40%, 0.4);
     border-style: inset;
 }
 
@@ -47,8 +47,7 @@
 }
 
 .navbar-text-important {
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .navbar-button:hover {
