@@ -1,5 +1,5 @@
 #navbar {
-  background-color: hsla(200, 10%, 10%, 0.4);
+  background-color: hsla(200, 10%, 10%, 0.2);
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.8rem;
@@ -21,7 +21,7 @@
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-color: hsla(200, 10%, 40%, 0.4);
+  border-color: hsla(200, 10%, 40%, 0.2);
   border-style: inset;
 }
 
