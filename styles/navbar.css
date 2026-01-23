@@ -1,53 +1,54 @@
 #navbar {
-    background-color: hsla(200, 10%, 10%, 0.4);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    width: 60%;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+  background-color: hsla(200, 10%, 10%, 0.4);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 }
 
 #navbar_menu {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar-border {
-    border-radius: 50px;
-    border-width: 0.7rem;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-color: hsla(200, 10%, 40%, 0.4);
-    border-style: inset;
+  border-radius: 50px;
+  border-width: 0.7rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-color: hsla(200, 10%, 40%, 0.4);
+  border-style: inset;
 }
 
 #navbar-sticky {
-    display: flex;
-    position: sticky;
-    justify-content: center;
+  display: flex;
+  position: sticky;
+  justify-content: center;
 }
 
 .navbar-button {
-    background-color: transparent;
+  background-color: transparent;
 
-    border: none;
-    padding: 0rem 0.5rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
+  border: none;
+  padding: 0rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 .navbar-button-text {
-    color: white;
-    font-size: 1rem;
+  color: white;
+  font-size: 1rem;
   text-shadow: 1px 5px 15px hsla(0, 0%, 20%, 1);
+
 }
 
 .navbar-text-important {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .navbar-button:hover {

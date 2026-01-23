@@ -1,39 +1,39 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #d000ff;
-    background: radial-gradient(circle, rgba(208, 0, 255, 1) 0%, rgba(102, 0, 255, 1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d000ff;
+  background: radial-gradient(circle, rgba(208, 0, 255, 1) 0%, rgba(102, 0, 255, 1) 100%);
 }
 
 h1 {
-    font-size: 3rem;
-    color: white;
-    margin: 0;
+  font-size: 3rem;
+  color: white;
+  margin: 0;
 }
 
 h2 {
-    font-size: 2.5rem;
-    color: white;
-    margin: 0;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
 }
 
 .margin-top-large {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .margin-top-huge {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .margin-bottom-small {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .margin-bottom-medium {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .margin-bottom-large {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -46,12 +46,12 @@ h2 {
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-regular {
-    color: white;
-    font-size: 1rem;
+  color: white;
+  font-size: 1rem;
 }
 
 .text-regular-shadow {
@@ -59,5 +59,5 @@ h2 {
 }
 
 .text-medium-weight {
-    font-weight: 500;
+  font-weight: 500;
 }
