@@ -43,7 +43,7 @@
 .navbar-button-text {
     color: white;
     font-size: 1rem;
-    text-shadow: 1px 5px 15px black;
+  text-shadow: 1px 5px 15px hsla(0, 0%, 20%, 1);
 }
 
 .navbar-text-important {
@@ -51,5 +51,5 @@
 }
 
 .navbar-button:hover {
-    background-color: hsla(200, 10%, 20%, 0.4);
+  background-color: hsla(200, 10%, 20%, 0.4);
 }
