@@ -1,14 +1,18 @@
-.skill_grid-box {
+.skill-padding {
     padding-left: 12.5rem;
     padding-right: 12.5rem;
+}
+
+.skill_grid-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
 .skill-box {
+    max-width: none;
     background-color: hsla(200, 10%, 10%, 0.2);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border-color: hsla(200, 10%, 40%, 0.2);
     border-style: inset;
     border-left: 0;
@@ -17,6 +21,7 @@
     border-bottom-width: 1rem;
     padding: 1.25rem 1.25rem;
 }
+
 
 .skill-text-tag {
     border-color: hsl(0, 0%, 90%);
@@ -37,4 +42,16 @@
 .skill-text-secondary {
     color: var(--secondary-text-color);
     font-size: var(--text-size-regular);
+}
+
+.skill_filter-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    border-radius: 1rem;
+    border-width: 0px;
+    border-bottom-width: 0.5rem;
+    border-color: hsla(0, 0%, 80%, 0.5);
+    border-style: inset;
+    background-color: hsla(0, 0%, 90%, 0.5);
 }
