@@ -1,3 +1,7 @@
 :root {
     --primary-text-color: hsl(0, 0%, 90%);
+    --secondary-text-color: hsl(0, 0%, 60%);
+    --text-size-small: 0.75rem;
+    --text-size-regular: 1rem;
+    --text-size-medium: 1.25rem;
 }

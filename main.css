@@ -59,12 +59,12 @@ h2 {
 
 .text-regular {
   color: var(--primary-text-color);
-  font-size: 1rem;
+  font-size: var(--text-size-regular);
 }
 
 .text-medium {
   color: var(--primary-text-color);
-  font-size: 1.25rem;
+  font-size: var(--text-size-medium);
 }
 
 .text-regular-shadow {
