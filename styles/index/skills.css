@@ -3,7 +3,7 @@
     padding-right: 12.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1rem;
 }
 
 .skill-box {
@@ -19,7 +19,13 @@
 }
 
 .skill-text-tag {
-    color: var(--secondary-text-color);
+    border-color: hsl(0, 0%, 90%);
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 0.15rem 0.4rem;
+    color: var(--primary-text-color);
     font-size: var(--text-size-small);
 }
 
