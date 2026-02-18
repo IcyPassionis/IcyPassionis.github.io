@@ -43,6 +43,9 @@
   text-shadow: 1px 5px 15px hsla(0, 0%, 20%, 1);
 
 }
+#navbar_mobile-menu {
+    display: none;
+}
 
 .navbar-text-important {
   font-weight: 500;
@@ -50,4 +53,12 @@
 
 .navbar-button:hover {
   background-color: hsla(200, 10%, 20%, 0.4);
+}
+@media (width < 771px) {
+  #navbar_menu {
+    display: none;
+  }
+  #navbar_mobile-menu {
+    display: block;
+  }
 }
