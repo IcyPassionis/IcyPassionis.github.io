@@ -5,7 +5,7 @@
 
 .skill_grid-box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
@@ -54,6 +54,12 @@
     border-color: hsla(0, 0%, 80%, 0.5);
     border-style: inset;
     background-color: hsla(0, 0%, 90%, 0.5);
+}
+@media (width < 1100px) {
+    .skill_grid-box {
+        gap: 0.75rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media (width < 991px) {
     .skill-padding {
