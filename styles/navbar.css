@@ -35,6 +35,7 @@
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: color linear 200ms;
 }
 
 .navbar-button-text {
@@ -52,7 +53,8 @@
 }
 
 .navbar-button:hover {
-  background-color: hsla(200, 10%, 20%, 0.4);
+  color: var(--secondary-text-color);
+
 }
 @media (width < 771px) {
   #navbar_menu {
