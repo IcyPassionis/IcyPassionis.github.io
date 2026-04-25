@@ -34,8 +34,40 @@
         <h2 class="text-align-center h2-shadow margin-top-huge margin-bottom-large"> Skills </h2>
         <div class="skill-padding">
             <div class="skill_filter-box margin-bottom-medium">
-                <div class="skill_filter-box-button"> Filter</div>
-                <div class="skill_filter-box-last-updated">Last updated at: 01-01-0000 Jesus borns </div>
+                <div class="skill_filter-dropdown">
+                    <button class="skill_filter-box-button" onclick="toggleFilterDropdown()">
+                        <span>Filter</span>
+                        <svg class="skill_filter-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div id="skill-filter-dropdown" class="skill_filter-dropdown-content">
+                        <div class="skill_filter-dropdown-header">Filter by category</div>
+                        <div class="skill_filter-dropdown-tags">
+                            <button class="skill_filter-tag">
+                                <span class="skill_filter-tag-check"></span>
+                                <span>Programming Language</span>
+                            </button>
+                            <button class="skill_filter-tag">
+                                <span class="skill_filter-tag-check"></span>
+                                <span>Game Engine/Framework</span>
+                            </button>
+                            <button class="skill_filter-tag">
+                                <span class="skill_filter-tag-check"></span>
+                                <span>Music Composing</span>
+                            </button>
+                            <button class="skill_filter-tag">
+                                <span class="skill_filter-tag-check"></span>
+                                <span>3D Modelling</span>
+                            </button>
+                        </div>
+                        <div class="skill_filter-dropdown-footer">
+                            <button class="skill_filter-clear" onclick="clearFilters(event)">Clear all</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-text-primary text-high-weight">Last updated at: 25-04-2026</div>
             </div>
             <div class="skill_grid-box">
                 <div class="skill-box">
@@ -142,6 +174,7 @@
         </div>
         <div id="Projects"></div>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
