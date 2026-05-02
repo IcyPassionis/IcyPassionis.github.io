@@ -36,6 +36,14 @@ h2 {
   margin-top: 4rem;
 }
 
+.margin-top-huge2 {
+  margin-top: 5rem;
+}
+
+.margin-top-huge3 {
+  margin-top: 6rem;
+}
+
 .margin-bottom-tiny {
   margin-bottom: 0.25rem;
 }
@@ -55,6 +63,16 @@ h2 {
 .margin-bottom-huge {
   margin-bottom: 4rem;
 }
+
+.margin-bottom-huge2 {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-huge3 {
+  margin-bottom: 6rem;
+}
+
+
 
 
 .h1-shadow {
