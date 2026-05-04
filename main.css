@@ -71,9 +71,11 @@ h2 {
 .margin-bottom-huge3 {
   margin-bottom: 6rem;
 }
-.padding-main{
-  padding-left: 10rem;
-  padding-right: 10rem;
+.margin-main{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 
