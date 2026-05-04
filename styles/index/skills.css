@@ -58,6 +58,9 @@
     align-items: center;
     gap: 0.5rem;
     background: hsla(200, 10%, 10%, 0.3);
+    border-right: 0rem;
+    border-top: 0rem;
+    border-left: 0rem;
     border-bottom-width: 0.5rem;
     border-color: hsla(200, 10%, 40%, 0.2);
     color: var(--primary-text-color);
@@ -73,6 +76,9 @@
 .skill_filter-box-button:hover {
     background: hsla(200, 10%, 10%, 0.45);
     border-color: hsla(200, 10%, 50%, 0.4);
+    margin-bottom: 0.15rem;
+    border-bottom-width: 0.35rem;
+    
 }
 
 .skill_filter-box-button .skill_filter-chevron {
