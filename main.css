@@ -113,3 +113,7 @@ h2 {
 .text-high-weight {
   font-weight: 700;
 }
+
+.text-wrap{
+  overflow-wrap: break-word;
+}
