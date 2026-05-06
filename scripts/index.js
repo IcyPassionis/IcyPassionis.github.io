@@ -100,3 +100,29 @@ if (mobileMenuButton && mobileDropdown) {
         }
     });
 }
+
+async function fetchYouTubeTitle(videoId) {
+    try {
+        const response = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`);
+        if (!response.ok) return null;
+        const data = await response.json();
+        return data.title;
+    } catch (error) {
+        console.error('Failed to fetch YouTube title:', error);
+        return null;
+    }
+}
+
+function loadMusicTitles() {
+    document.querySelectorAll('.music-title[data-youtube-id]').forEach(async (el) => {
+        const videoId = el.getAttribute('data-youtube-id');
+        const title = await fetchYouTubeTitle(videoId);
+        if (title) {
+            el.textContent = title;
+        } else {
+            el.textContent = 'YouTube Music';
+        }
+    });
+}
+
+loadMusicTitles();
