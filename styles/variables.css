@@ -7,3 +7,27 @@
     --text-size-regular: 1rem;
     --text-size-medium: 1.25rem;
 }
+@media (width < 1100px) {
+    :root {
+        --text-size-tiny: 0.45rem;
+        --text-size-small: 0.7rem;
+        --text-size-regular: 0.9rem;
+        --text-size-medium: 1.15rem;
+    }
+}
+@media (width < 991px) {
+    :root {
+        --text-size-tiny: 0.42rem;
+        --text-size-small: 0.67rem;
+        --text-size-regular: 0.85rem;
+        --text-size-medium: 1.1rem;
+    }
+}
+@media (width < 650px) {
+    :root {
+        --text-size-tiny: 0.35rem;
+        --text-size-small: 0.6rem;
+        --text-size-regular: 0.8rem;
+        --text-size-medium: 1rem;
+    }
+}

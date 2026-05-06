@@ -79,7 +79,50 @@ h2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
+@media(width < 991px) 
+{
+  .margin-main{
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  }
+}
+@media(width < 750px) 
+{
+  .margin-main{
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  }
+}
+@media(width < 650px) 
+{
+  .margin-main{
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  }
+}
+@media(width < 420px) 
+{
+  .margin-main{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  }
+}
 
 
 .h1-shadow {
