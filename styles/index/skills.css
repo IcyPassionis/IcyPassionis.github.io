@@ -82,9 +82,6 @@
 .skill_filter-box-button:hover {
     background: hsla(200, 10%, 10%, 0.45);
     border-color: hsla(200, 10%, 50%, 0.4);
-    margin-bottom: 0.15rem;
-    border-bottom-width: 0.35rem;
-    
 }
 
 .skill_filter-box-button .skill_filter-chevron {
