@@ -51,7 +51,7 @@
 
 .project-description {
     color: var(--secondary-text-color);
-    font-size: var(--text-size-regular);
+    font-size: var(--text-size-small);
     line-height: 1.5;
     margin: 0;
     flex-grow: 1;
