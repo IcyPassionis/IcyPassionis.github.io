@@ -4,6 +4,10 @@ body {
   background: radial-gradient(circle, rgba(165, 87, 255, 1) 0%, rgba(203, 99, 255, 1) 100%);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3rem;
   color: var(--primary-text-color);
@@ -160,6 +164,16 @@ h2 {
   font-weight: 700;
 }
 
-.text-wrap{
+.text-wrap {
   overflow-wrap: break-word;
 }
+
+/*#header{
+  background-color: rgba(81, 0, 122, 0.306);
+}
+#skills {
+  background-color: rgba(81, 0, 122, 0.306);
+}
+#projects{
+  background-color: rgba(81, 0, 122, 0.306);
+}*/
