@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="/styles/navbar.css" />
   <link rel="stylesheet" href="/styles/variables.css" />
+  <link rel="stylesheet" href="/styles/index/musics.css" />
+  <link rel="stylesheet" href="/styles/index/skills.css" />
 </head>
 
 <body>
@@ -15,7 +17,7 @@
       <div id="navbar_menu">
         <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
         <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
-        <a class="navbar-button navbar-button-text"> Music </a>
+        <a class="navbar-button navbar-button-text navbar-text-important" href="/pages/music.html"> Music </a>
       </div>
       <button id="navbar_mobile-menu" class="navbar-mobile-menu-button" aria-label="Toggle menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -28,7 +30,44 @@
       <div id="navbar_mobile-dropdown" class="navbar-mobile-dropdown">
         <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
         <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
-        <a class="navbar-button navbar-button-text"> Music </a>
+        <a class="navbar-button navbar-button-text navbar-text-important" href="/pages/music.html"> Music </a>
       </div>
     </div>
   </div>
+  <div id="musics" class="margin-main">
+    <h1 class="text-align-center h1-shadow margin-bottom-large">Musics</h1>
+    <div class="music_sort-box">
+      <div class="music_sort-dropdown skill_filter-dropdown">
+        <button class="skill_filter-box-button" onclick="toggleSortDropdown()">
+          <span>Newest First</span>
+          <svg class="skill_filter-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div id="music-sort-dropdown" class="skill_filter-dropdown-content">
+          <div class="skill_filter-dropdown-header">Sort by</div>
+          <div class="skill_filter-dropdown-tags">
+            <button class="skill_filter-tag music_sort-tag active" data-sort="new-old">
+              <span class="skill_filter-tag-check"></span>
+              <span>Newest First</span>
+            </button>
+            <button class="skill_filter-tag music_sort-tag" data-sort="old-new">
+              <span class="skill_filter-tag-check"></span>
+              <span>Oldest First</span>
+            </button>
+            <button class="skill_filter-tag music_sort-tag" data-sort="name">
+              <span class="skill_filter-tag-check"></span>
+              <span>Name (A-Z)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="skill-text-primary text-high-weight">All platforms: YouTube & SoundCloud</div>
+    </div>
+    <div class="music_grid-box"></div>
+  </div>
+  <script src="/scripts/music.js"></script>
+</body>
+
+</html>
