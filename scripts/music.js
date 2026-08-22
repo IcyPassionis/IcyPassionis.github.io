@@ -40,7 +40,7 @@ const musicTracks = [
 const musicGrid = document.querySelector('.music_grid-box');
 const musicSortDropdown = document.getElementById('music-sort-dropdown');
 const musicSortWrapper = document.querySelector('.music_sort-dropdown');
-const musicSortButton = document.querySelector('.music_sort-box-button');
+const musicSortButton = document.querySelector('.music_sort-dropdown .skill_filter-box-button');
 const musicSortButtonLabel = musicSortButton ? musicSortButton.querySelector('span') : null;
 const musicSortTags = document.querySelectorAll('.music_sort-tag');
 
