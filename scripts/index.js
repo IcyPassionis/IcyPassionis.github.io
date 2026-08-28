@@ -85,22 +85,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-const mobileMenuButton = document.getElementById('navbar_mobile-menu');
-const mobileDropdown = document.getElementById('navbar_mobile-dropdown');
-
-if (mobileMenuButton && mobileDropdown) {
-    mobileMenuButton.addEventListener('click', function(event) {
-        event.stopPropagation();
-        mobileDropdown.classList.toggle('open');
-    });
-
-    document.addEventListener('click', function(event) {
-        if (!mobileDropdown.contains(event.target) && !mobileMenuButton.contains(event.target)) {
-            mobileDropdown.classList.remove('open');
-        }
-    });
-}
-
 async function fetchYouTubeTitle(videoId) {
     try {
         const response = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`);
