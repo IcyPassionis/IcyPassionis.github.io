@@ -75,23 +75,58 @@
       Things I have designed, built and shipped
     </div>
 
+    <div class="project_filter-box margin-bottom-medium">
+      <div class="project_filter-dropdown">
+        <button class="project_filter-box-button" onclick="toggleProjectFilterDropdown()">
+          <span>Filter</span>
+          <svg class="project_filter-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div id="project-filter-dropdown" class="project_filter-dropdown-content">
+          <div class="project_filter-dropdown-header">Filter by category</div>
+          <div class="project_filter-dropdown-tags">
+            <button class="project_filter-tag">
+              <span class="project_filter-tag-check"></span>
+              <span>Game related</span>
+            </button>
+            <button class="project_filter-tag">
+              <span class="project_filter-tag-check"></span>
+              <span>Application</span>
+            </button>
+            <button class="project_filter-tag">
+              <span class="project_filter-tag-check"></span>
+              <span>Web related</span>
+            </button>
+          </div>
+          <div class="project_filter-dropdown-footer">
+            <button class="project_filter-clear" onclick="clearProjectFilters(event)">Clear all</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-text-primary text-high-weight"><span id="project-count">6</span> projects</div>
+    </div>
+
     <div class="project_grid-box">
-      <div class="project-box">
+      <div class="project-box" data-category="Application">
         <div class="project-thumbnail">
           <img src="/images/Med-Tracker.avif" alt="Med-Tracker Screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Application</div>
           <h3 class="project-title">Med-Tracker</h3>
           <p class="project-description">A medication tracking application built with Rust and Iced.</p>
           <a href="/pages/projects/med-tracker.html" class="project-button">Go to Page</a>
         </div>
       </div>
 
-      <div class="project-box">
+      <div class="project-box" data-category="Game related">
         <div class="project-thumbnail">
           <img src="/images/Lively.avif" alt="Lively Screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Game related</div>
           <h3 class="project-title">Lively</h3>
           <p class="project-description">A work-in-progress text-based life simulator game built in Unity. Currently in
             active development.</p>
@@ -99,11 +134,12 @@
         </div>
       </div>
 
-      <div class="project-box">
+      <div class="project-box" data-category="Game related">
         <div class="project-thumbnail">
           <img src="/images/TutkusLiteEngine.avif" alt="Tutku's Lite Game Engine Screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Game related</div>
           <h3 class="project-title">Tutku's Lite Game Engine</h3>
           <p class="project-description">A game engine focused on low poly graphics and tycoon games, developed on the
             raylib library.</p>
@@ -111,11 +147,12 @@
         </div>
       </div>
 
-      <div class="project-box">
+      <div class="project-box" data-category="Application">
         <div class="project-thumbnail">
           <img src="/images/Med-Tracker.avif" alt="i3-eww dock screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Application</div>
           <h3 class="project-title">i3-eww Dock</h3>
           <p class="project-description">A customizable dock and widget setup for the i3 window manager, built with
             ElKowars wacky widgets.</p>
@@ -123,11 +160,12 @@
         </div>
       </div>
 
-      <div class="project-box">
+      <div class="project-box" data-category="Game related">
         <div class="project-thumbnail">
           <img src="/images/TutkusLiteEngine.avif" alt="Paralives Optimisation screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Game related</div>
           <h3 class="project-title">Paralives Optimisation</h3>
           <p class="project-description">Performance optimisation work for Paralives, improving framerate and load
             times.</p>
@@ -135,11 +173,12 @@
         </div>
       </div>
 
-      <div class="project-box">
+      <div class="project-box" data-category="Web related">
         <div class="project-thumbnail">
-          <img src="/images/Lively.avif" alt="Portfolio Website screenshot" />
+          <img src="/images/Portfolio.avif" alt="Portfolio Website screenshot" />
         </div>
         <div class="project-content">
+          <div class="project-tag">Web related</div>
           <h3 class="project-title">Portfolio Website</h3>
           <p class="project-description">The website you are looking at right now — designed and built from scratch with
             plain HTML and CSS.</p>
@@ -150,6 +189,7 @@
   </div>
 
   <script src="/scripts/navbar.js"></script>
+  <script src="/scripts/projects.js"></script>
 </body>
 
 </html>
