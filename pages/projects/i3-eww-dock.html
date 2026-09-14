@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>i3-eww Dock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="/styles/variables.css" />
+  <link rel="stylesheet" href="/styles/pages/project-detail.css" />
+</head>
+
+<body>
+  <div id="navbar-sticky">
+    <div id="navbar" class="navbar-border">
+      <a class="navbar-button navbar-button-text navbar-text-important" href="/index.html">Portfolyocuk</a>
+      <div id="navbar_right">
+        <div id="navbar_menu">
+          <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
+          <a class="navbar-button navbar-button-text" href="/pages/music.html"> Music </a>
+        </div>
+        <div class="navbar-language">
+          <button class="navbar-button navbar-button-text navbar-language-button" id="navbar_language-button"
+            aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M3.6 9h16.8" />
+              <path d="M3.6 15h16.8" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+            <span id="navbar_language-current">EN</span>
+            <svg class="navbar-language-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div id="navbar_language-dropdown" class="navbar-language-dropdown">
+            <button class="navbar-language-option active" data-language="en">
+              <span class="navbar-language-flag">🇬🇧</span>
+              <span>English</span>
+            </button>
+            <button class="navbar-language-option" data-language="tr">
+              <span class="navbar-language-flag">🇹🇷</span>
+              <span>Türkçe</span>
+            </button>
+          </div>
+        </div>
+        <button id="navbar_mobile-menu" class="navbar-mobile-menu-button" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+        </button>
+        <div id="navbar_mobile-dropdown" class="navbar-mobile-dropdown">
+          <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
+          <a class="navbar-button navbar-button-text" href="/pages/music.html"> Music </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-detail" class="margin-main">
+    <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">i3-eww Dock</h1>
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+      Custom desktop dock for i3
+    </div>
+
+    <div class="detail-hero margin-bottom-medium">
+      <img src="/images/Street%20Light.avif" alt="i3-eww dock screenshot" />
+    </div>
+
+    <div class="detail-panel">
+      <h2 class="detail-heading">About</h2>
+      <p class="detail-text-secondary margin-bottom-medium">
+        A customizable dock and widget setup for the i3 window manager, built with ElKowars wacky
+        widgets (eww). It brings a glanceable, always-on-top dock with system info to a tiling
+        window manager workflow.
+      </p>
+      <h2 class="detail-heading">Details</h2>
+      <ul class="detail-list">
+        <li><strong>Stack:</strong> eww (Yuck, SCSS), shell scripting</li>
+        <li><strong>Platform:</strong> Linux (i3 window manager)</li>
+        <li><strong>Status:</strong> Released</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="floating-buttons">
+    <a href="#" class="floating-button floating-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
+      </svg>
+    </a>
+    <a href="#" class="floating-button floating-linkedin" target="_blank" rel="noopener noreferrer"
+      aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="/scripts/navbar.js"></script>
+</body>
+
+</html>

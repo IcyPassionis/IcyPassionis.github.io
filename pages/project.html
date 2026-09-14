@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/main.css" />
   <link rel="stylesheet" href="/styles/navbar.css" />
   <link rel="stylesheet" href="/styles/variables.css" />
+  <link rel="stylesheet" href="/styles/index/projects.css" />
 </head>
 
 <body>
@@ -18,7 +19,7 @@
       <a class="navbar-button navbar-button-text navbar-text-important" href="/index.html">Portfolyocuk</a>
       <div id="navbar_right">
         <div id="navbar_menu">
-          <a class="navbar-button navbar-button-text"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
           <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
           <a class="navbar-button navbar-button-text" href="/pages/music.html"> Music </a>
         </div>
@@ -60,11 +61,95 @@
           </svg>
         </button>
         <div id="navbar_mobile-dropdown" class="navbar-mobile-dropdown">
-          <a class="navbar-button navbar-button-text"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="/pages/project.html"> Projects </a>
           <a class="navbar-button navbar-button-text" href="/pages/model.html"> Models </a>
           <a class="navbar-button navbar-button-text" href="/pages/music.html"> Music </a>
         </div>
-
+      </div>
     </div>
   </div>
+
+  <div id="projects-page" class="margin-main">
+    <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Projects</h1>
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+      Things I have designed, built and shipped
+    </div>
+
+    <div class="project_grid-box">
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/Med-Tracker.avif" alt="Med-Tracker Screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Med-Tracker</h3>
+          <p class="project-description">A medication tracking application built with Rust and Iced.</p>
+          <a href="/pages/projects/med-tracker.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/Lively.avif" alt="Lively Screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Lively</h3>
+          <p class="project-description">A work-in-progress text-based life simulator game built in Unity. Currently in
+            active development.</p>
+          <a href="/pages/projects/lively.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/TutkusLiteEngine.avif" alt="Tutku's Lite Game Engine Screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Tutku's Lite Game Engine</h3>
+          <p class="project-description">A game engine focused on low poly graphics and tycoon games, developed on the
+            raylib library.</p>
+          <a href="/pages/projects/tutkus-lite-engine.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/Med-Tracker.avif" alt="i3-eww dock screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">i3-eww Dock</h3>
+          <p class="project-description">A customizable dock and widget setup for the i3 window manager, built with
+            ElKowars wacky widgets.</p>
+          <a href="/pages/projects/i3-eww-dock.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/TutkusLiteEngine.avif" alt="Paralives Optimisation screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Paralives Optimisation</h3>
+          <p class="project-description">Performance optimisation work for Paralives, improving framerate and load
+            times.</p>
+          <a href="/pages/projects/paralives-optimisation.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-thumbnail">
+          <img src="/images/Lively.avif" alt="Portfolio Website screenshot" />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-description">The website you are looking at right now — designed and built from scratch with
+            plain HTML and CSS.</p>
+          <a href="/pages/projects/portfolio-website.html" class="project-button">Go to Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="/scripts/navbar.js"></script>
+</body>
+
+</html>
