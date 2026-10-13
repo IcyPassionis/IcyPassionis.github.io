@@ -1,7 +1,78 @@
+:root {
+  --glow-color: rgba(68, 52, 101, 1);
+  --space-color: rgba(13, 7, 23, 1);
+  --twinkle-opacity: 1;
+}
+
 body {
   font-family: "JetBrains Mono", "Courier New", monospace;
   background: var(--background-color);
-  background: radial-gradient(circle, rgba(165, 87, 255, 1) 0%, rgba(203, 99, 255, 1) 100%);
+  background: radial-gradient(circle at 50% 20%,
+      rgba(68, 52, 101, 1) 0%,
+      rgba(44, 30, 72, 1) 45%,
+      rgba(13, 7, 23, 1) 100%);
+  background-attachment: fixed;
+}
+
+/* ===== Cosmic starfield =====
+   Two fixed layers of box-shadow "stars" (drawn by scripts/stars.js),
+   drifting/twinkling slowly. Purely decorative; sits behind all content. */
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.starfield .stars-a,
+.starfield .stars-b {
+  position: absolute;
+  inset: 0;
+}
+
+.starfield .stars-a {
+  animation: star-drift 240s linear infinite;
+}
+
+.starfield .stars-b {
+  animation: star-drift 360s linear infinite reverse;
+}
+
+.starfield .star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+  box-shadow: 0 0 6px 1px rgba(214, 199, 249, 0.55);
+  animation: star-twinkle 4s ease-in-out infinite;
+}
+
+.starfield .star.big {
+  width: 3px;
+  height: 3px;
+  animation-duration: 6s;
+}
+
+@keyframes star-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-60px, -100px, 0); }
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: var(--twinkle-opacity); }
+  50%      { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .starfield .stars-a,
+  .starfield .stars-b,
+  .starfield .star {
+    animation: none;
+  }
 }
 
 a {
@@ -131,11 +202,11 @@ h2 {
 
 
 .h1-shadow {
-  text-shadow: 1px 2px 20px hsla(0, 0%, 20%, 1);
+  text-shadow: 1px 2px 20px hsla(258, 45%, 5%, 0.9);
 }
 
 .h2-shadow {
-  text-shadow: 1px 2px 15px hsla(0, 0%, 20%, 1);
+  text-shadow: 1px 2px 15px hsla(258, 45%, 5%, 0.9);
 }
 
 .text-align-center {
@@ -153,7 +224,7 @@ h2 {
 }
 
 .text-regular-shadow {
-  text-shadow: 1px 2px 10px hsla(0, 0%, 20%, 1);
+  text-shadow: 1px 2px 10px hsla(258, 45%, 5%, 0.9);
 }
 
 .text-medium-weight {

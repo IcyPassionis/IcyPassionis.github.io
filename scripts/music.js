@@ -1,5 +1,11 @@
 const musicTracks = [
     {
+        title: 'The Place Reality Forgot',
+        youtubeId: '_pEc_9Gws8I',
+        soundcloudUrl: 'https://soundcloud.com/icypassionis/the-place-reality-forgot',
+        uploadDate: '2026-09-24T00:40:26Z'
+    },
+    {
         title: 'Rekindle',
         youtubeId: 'f90fbPd6aFs',
         soundcloudUrl: 'https://soundcloud.com/icypassionis/first-rekindle',

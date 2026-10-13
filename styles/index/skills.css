@@ -6,9 +6,9 @@
 
 .skill-box {
     max-width: none;
-    background-color: hsla(200, 10%, 10%, 0.2);
+    background-color: hsla(262, 30%, 16%, 0.6);
     border-radius: 1rem;
-    border-color: hsla(200, 10%, 40%, 0.2);
+    border-color: hsla(259, 50%, 58%, 0.35);
     border-style: inset;
     border-left: 0;
     border-right: 0;
@@ -20,7 +20,7 @@
 
 .skill-box:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(13, 7, 23, 0.5);
 }
 
 
@@ -53,9 +53,9 @@
     border-radius: 1rem;
     border-width: 0;
     border-bottom-width: 0.5rem;
-    border-color: hsla(200, 10%, 40%, 0.2);
+    border-color: hsla(259, 50%, 58%, 0.35);
     border-style: inset;
-    background-color: hsla(200, 10%, 10%, 0.2);
+    background-color: hsla(262, 30%, 16%, 0.6);
     position: relative;
 }
 
@@ -63,12 +63,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: hsla(200, 10%, 10%, 0.3);
+    background: rgba(214, 199, 249, 0.14);
     border-right: 0rem;
     border-top: 0rem;
     border-left: 0rem;
     border-bottom-width: 0.5rem;
-    border-color: hsla(200, 10%, 40%, 0.2);
+    border-color: hsla(259, 50%, 58%, 0.35);
     color: var(--primary-text-color);
     font-size: var(--text-size-regular);
     font-weight: 500;
@@ -76,12 +76,12 @@
     padding: 0.5rem 1rem;
     border-radius: 25px;
     transition: all 0.2s ease;
-    text-shadow: 1px 2px 10px hsla(0, 0%, 20%, 1);
+    text-shadow: 1px 2px 10px hsla(258, 45%, 5%, 0.9);
 }
 
 .skill_filter-box-button:hover {
-    background: hsla(200, 10%, 10%, 0.45);
-    border-color: hsla(200, 10%, 50%, 0.4);
+    background: rgba(214, 199, 249, 0.28);
+    border-color: hsla(259, 55%, 65%, 0.5);
 }
 
 .skill_filter-box-button .skill_filter-chevron {
@@ -109,8 +109,8 @@
     min-width: 260px;
     padding: 0.75rem 0.5rem;
     border-radius: 1rem;
-    background-color: hsla(200, 10%, 10%, 0.92);
-    border-color: hsla(200, 10%, 40%, 0.25);
+    background-color: hsla(262, 34%, 12%, 0.94);
+    border-color: hsla(259, 50%, 58%, 0.35);
     border-style: inset;
     border-width: 0;
     border-bottom-width: 0.5rem;
@@ -133,7 +133,7 @@
     left: 2rem;
     width: 12px;
     height: 12px;
-    background-color: hsla(200, 10%, 10%, 0.92);
+    background-color: hsla(262, 34%, 12%, 0.94);
     transform: rotate(45deg);
     border-radius: 2px;
 }
@@ -174,7 +174,7 @@
 }
 
 .skill_filter-tag:hover {
-    background-color: hsla(200, 10%, 25%, 0.4);
+    background-color: hsla(258, 25%, 30%, 0.4);
 }
 
 .skill_filter-tag-check {
@@ -182,15 +182,15 @@
     width: 16px;
     height: 16px;
     border-radius: 4px;
-    border: 1.5px solid hsla(0, 0%, 70%, 0.4);
+    border: 1.5px solid hsla(258, 35%, 75%, 0.45);
     flex-shrink: 0;
     position: relative;
     transition: all 0.15s ease;
 }
 
 .skill_filter-tag.active .skill_filter-tag-check {
-    background-color: hsl(268, 100%, 67%);
-    border-color: hsl(268, 100%, 67%);
+    background-color: hsl(258, 62%, 68%);
+    border-color: hsl(258, 62%, 68%);
 }
 
 .skill_filter-tag.active .skill_filter-tag-check::after {
@@ -206,13 +206,13 @@
 }
 
 .skill_filter-tag.active {
-    color: hsl(268, 100%, 92%);
+    color: hsl(258, 82%, 88%);
 }
 
 .skill_filter-dropdown-footer {
     margin-top: 0.5rem;
     padding: 0.5rem 0.75rem 0.25rem;
-    border-top: 1px solid hsla(200, 10%, 40%, 0.2);
+    border-top: 1px solid hsla(259, 50%, 58%, 0.35);
 }
 
 .skill_filter-clear {
@@ -231,13 +231,13 @@
 }
 
 .skill_filter-box-button[data-count] {
-    background: hsla(268, 100%, 67%, 0.25);
-    border-color: hsla(268, 100%, 67%, 0.5);
+    background: hsla(258, 62%, 68%, 0.25);
+    border-color: hsla(258, 62%, 68%, 0.5);
 }
 
 .skill_filter-box-button[data-count]:hover {
-    background: hsla(268, 100%, 67%, 0.4);
-    border-color: hsla(268, 100%, 67%, 0.7);
+    background: hsla(258, 62%, 68%, 0.4);
+    border-color: hsla(258, 62%, 68%, 0.7);
 }
 
 .skill_grid-empty {
@@ -246,7 +246,7 @@
     padding: 3rem 1rem;
     color: var(--secondary-text-color);
     font-size: var(--text-size-medium);
-    text-shadow: 1px 2px 10px hsla(0, 0%, 20%, 1);
+    text-shadow: 1px 2px 10px hsla(258, 45%, 5%, 0.9);
 }
 
 @media (width < 1100px) {
