@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
 </head>
 
-<body>
+<body class="project-page" style="--accent-h: 30">
   <div class="starfield"></div>
   <div id="navbar-sticky">
     <div id="navbar" class="navbar-border">
@@ -72,26 +72,38 @@
 
   <div id="project-detail" class="margin-main">
     <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Tutku's Lite Game Engine</h1>
-    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
       Low poly tycoon game engine
     </div>
 
-    <div class="detail-hero margin-bottom-medium">
-      <img src="../../images/TutkusLiteEngine.avif" alt="Tutku's Lite Game Engine Screenshot" />
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">C/C++</span>
+      <span class="detail-badge">raylib</span>
+      <span class="detail-badge">In development</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <img src="../../images/TutkusLiteEngine.avif" alt="Tutku's Lite Game Engine Screenshot" />
+      </div>
     </div>
 
     <div class="detail-panel">
-      <h2 class="detail-heading">About</h2>
-      <p class="detail-text-secondary margin-bottom-medium">
-        Tutku's Lite Game Engine is a game engine focused on low poly graphics and tycoon games,
-        developed on the raylib library.
-      </p>
-      <h2 class="detail-heading">Details</h2>
-      <ul class="detail-list">
-        <li><strong>Stack:</strong> C/C++, raylib</li>
-        <li><strong>Focus:</strong> Low poly rendering, tycoon game systems</li>
-        <li><strong>Status:</strong> In development</li>
-      </ul>
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          Tutku's Lite Game Engine is a game engine focused on low poly graphics and tycoon games,
+          developed on the raylib library.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> C/C++, raylib</li>
+          <li><strong>Focus:</strong> Low poly rendering, tycoon game systems</li>
+          <li><strong>Status:</strong> In development</li>
+        </ul>
+      </section>
     </div>
   </div>
 
@@ -115,6 +127,7 @@
 
   <script src="../../scripts/navbar.js"></script>
   <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
 </body>
 
 </html>

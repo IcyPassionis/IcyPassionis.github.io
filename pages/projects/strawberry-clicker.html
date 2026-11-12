@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
 </head>
 
-<body>
+<body class="project-page" style="--accent-h: 350">
   <div class="starfield"></div>
   <div id="navbar-sticky">
     <div id="navbar" class="navbar-border">
@@ -72,34 +72,126 @@
 
   <div id="project-detail" class="margin-main">
     <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Strawberry Clicker</h1>
-    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
       Pixel-art idle clicker game
     </div>
 
-    <div class="detail-hero margin-bottom-medium">
-      <img src="../../images/StrawberryClicker.avif" alt="Strawberry Clicker Screenshot" />
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">Godot 4</span>
+      <span class="detail-badge">C#</span>
+      <span class="detail-badge">Windows / Linux</span>
+      <span class="detail-badge">Android</span>
+      <span class="detail-badge">Released on itch.io</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <img src="../../images/StrawberryClicker.avif" alt="Strawberry Clicker Screenshot" />
+      </div>
     </div>
 
     <div class="detail-panel">
-      <h2 class="detail-heading">About</h2>
-      <p class="detail-text-secondary margin-bottom-medium">
-        Strawberry Clicker is an idle clicker where one big strawberry grows into a whole garden. Tap the
-        berry, buy producers from potted plants and fields to greenhouses and factories, and give each
-        one its own upgrades. The garden on screen fills up with everything you own. Strawberries also rot over time, so part of the game is protecting your harvest with crates, a
-        cool cellar, a fridge and a freezer facility. Fields, factories and labs have specialization
-        branches you can respec later. The game works fully offline, with no ads and no in-app purchases.
-      </p>
-      <h2 class="detail-heading">Details</h2>
-      <ul class="detail-list">
-        <li><strong>Stack:</strong> Godot 4, C#</li>
-        <li><strong>Art:</strong> Hand-authored pixel-art SVGs</li>
-        <li><strong>Platform:</strong> Android (Google Play)</li>
-        <li><strong>Status:</strong> Closed testing</li>
-      </ul>
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          Strawberry Clicker is an idle clicker where one big strawberry grows into a whole garden. Tap the
+          berry, buy producers from potted plants and fields to greenhouses and factories, and give each
+          one its own upgrades. The garden on screen fills up with everything you own. Strawberries also rot over time, so part of the game is protecting your harvest with crates, a
+          cool cellar, a fridge and a freezer facility. Fields, factories and labs have specialization
+          branches you can respec later. The game works fully offline, with no ads and no in-app purchases.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Highlights</h2>
+        <div class="detail-highlights">
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Producers with their own upgrades</h3>
+            <p class="detail-highlight-text">From potted plants and fields up to greenhouses and factories, each one with its own upgrade track.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Spoilage</h3>
+            <p class="detail-highlight-text">Strawberries rot over time. Crates, a cool cellar, a fridge and a freezer facility keep the harvest alive.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Specializations</h3>
+            <p class="detail-highlight-text">Fields, factories and labs branch into specializations, and you can respec later.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">A garden that fills up</h3>
+            <p class="detail-highlight-text">Everything you buy shows up on screen, so the garden visibly grows with you.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Honest monetization</h3>
+            <p class="detail-highlight-text">Fully offline. No ads, no in-app purchases.</p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Gallery</h2>
+        <div class="detail-gallery">
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/round3-wide.avif"
+            data-caption="Desktop layout: a fresh garden, one berry and an empty field">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/round3-wide.avif" alt="Desktop layout: a fresh garden, one berry and an empty field" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Desktop layout: a fresh garden, one berry and an empty field</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/expansion-wide-garden.avif"
+            data-caption="Late game on desktop: markets, labs and greenhouses crowd the garden">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/expansion-wide-garden.avif" alt="Late game on desktop: markets, labs and greenhouses crowd the garden" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Late game on desktop: markets, labs and greenhouses crowd the garden</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/mobile.avif"
+            data-caption="Mobile layout: the garden up top, upgrades below">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/mobile.avif" alt="Mobile layout: the garden up top, upgrades below" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Mobile layout: the garden up top, upgrades below</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/freezer-wide-l10.avif"
+            data-caption="Protection tab: crates, cellar, fridge and the freezer fighting spoilage">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/freezer-wide-l10.avif" alt="Protection tab: crates, cellar, fridge and the freezer fighting spoilage" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Protection tab: crates, cellar, fridge and the freezer fighting spoilage</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/expansion-wide-lab-branch.avif"
+            data-caption="Lab specialization branches, picked once and respec-able later">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/expansion-wide-lab-branch.avif" alt="Lab specialization branches, picked once and respec-able later" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Lab specialization branches, picked once and respec-able later</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/strawberry/feature.avif"
+            data-caption="Store feature graphic">
+            <span class="gallery-item-media">
+              <img src="../../images/strawberry/feature.avif" alt="Store feature graphic" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Store feature graphic</span>
+          </button>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> Godot 4, C#</li>
+          <li><strong>Art:</strong> Hand-authored pixel-art SVGs</li>
+          <li><strong>Platform:</strong> Windows / Linux (itch.io), Android (Google Play)</li>
+          <li><strong>Status:</strong> Released on itch.io, closed testing on Google Play</li>
+        </ul>
+      </section>
     </div>
   </div>
 
   <div class="floating-buttons">
+    <a href="https://icypassionis.itch.io/strawberry-clicker" class="floating-button floating-itch" target="_blank"
+      rel="noopener noreferrer" aria-label="itch.io">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.92-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z" />
+      </svg>
+    </a>
     <a href="#" class="floating-button floating-googleplay" target="_blank" rel="noopener noreferrer"
       aria-label="Google Play">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
@@ -112,6 +204,7 @@
 
   <script src="../../scripts/navbar.js"></script>
   <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
 </body>
 
 </html>

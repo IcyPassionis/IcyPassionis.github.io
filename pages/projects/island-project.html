@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Island Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../main.css" />
+  <link rel="stylesheet" href="../../styles/navbar.css" />
+  <link rel="stylesheet" href="../../styles/variables.css" />
+  <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
+</head>
+
+<body class="project-page" style="--accent-h: 185">
+  <div class="starfield"></div>
+  <div id="navbar-sticky">
+    <div id="navbar" class="navbar-border">
+      <a class="navbar-button navbar-button-text navbar-text-important" href="../../index.html">Portfolyocuk</a>
+      <div id="navbar_right">
+        <div id="navbar_menu">
+          <a class="navbar-button navbar-button-text" href="../../pages/project.html"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="../../pages/model.html"> Models </a>
+          <a class="navbar-button navbar-button-text" href="../../pages/music.html"> Music </a>
+        </div>
+        <div class="navbar-language">
+          <button class="navbar-button navbar-button-text navbar-language-button" id="navbar_language-button"
+            aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M3.6 9h16.8" />
+              <path d="M3.6 15h16.8" />
+              <path d="M11.5 3a17 17 0 0 0 0 18" />
+              <path d="M12.5 3a17 17 0 0 1 0 18" />
+            </svg>
+            <span id="navbar_language-current">EN</span>
+            <svg class="navbar-language-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div id="navbar_language-dropdown" class="navbar-language-dropdown">
+            <button class="navbar-language-option active" data-language="en">
+              <span class="navbar-language-flag">🇬🇧</span>
+              <span>English</span>
+            </button>
+            <button class="navbar-language-option" data-language="tr">
+              <span class="navbar-language-flag">🇹🇷</span>
+              <span>Türkçe</span>
+            </button>
+          </div>
+        </div>
+        <button id="navbar_mobile-menu" class="navbar-mobile-menu-button" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+        </button>
+        <div id="navbar_mobile-dropdown" class="navbar-mobile-dropdown">
+          <a class="navbar-button navbar-button-text" href="../../pages/project.html"> Projects </a>
+          <a class="navbar-button navbar-button-text" href="../../pages/model.html"> Models </a>
+          <a class="navbar-button navbar-button-text" href="../../pages/music.html"> Music </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-detail" class="margin-main">
+    <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Island Project</h1>
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
+      Low-poly island colony game, built in Godot + C#
+    </div>
+
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">Godot 4.7</span>
+      <span class="detail-badge">C# / .NET 8</span>
+      <span class="detail-badge">PC + Android</span>
+      <span class="detail-badge">Pre-alpha</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <video src="../../videos/island-day-night.mp4" poster="../../images/IslandProject.avif" autoplay muted loop
+          playsinline></video>
+      </div>
+    </div>
+
+    <div class="detail-panel">
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          A 3D low-poly colony game in the spirit of My Tribe. You start on a procedurally generated home island
+          and grow a settlement there; the long-term plan is sailing out to other islands, settling them and
+          trading between them. Right now it's a solid technical foundation without a gameplay loop yet: island
+          generation, water, sky, camera and building placement all work, colonists and resources come next.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Highlights</h2>
+        <div class="detail-highlights">
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Seeded island generation</h3>
+            <p class="detail-highlight-text">Every island comes from a seed, so the same seed gives the same island
+              on every platform. Shapes, hills with walkable plateaus, beaches, forest and rock zones, and props
+              scattered with Poisson-disk sampling.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Day/night cycle</h3>
+            <p class="detail-highlight-text">A 30-minute day with a warped sun path (longer days, quicker nights),
+              sun and moon lights, and a custom sky shader with sunsets, stars, a cratered moon and drifting
+              clouds.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Build system</h3>
+            <p class="detail-highlight-text">Ghost preview, 3 m grid snapping, rotation, and placement checks for
+              slope, sea level and obstacles before anything gets placed.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Camera</h3>
+            <p class="detail-highlight-text">RTS-style free camera that follows the terrain height, plus a cinematic
+              orbit camera behind the main menu.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Handmade models</h3>
+            <p class="detail-highlight-text">Every hut, tree, palm and rock in the game is a low-poly model I built
+              by hand in Blender.</p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Gallery</h2>
+        <div class="detail-gallery">
+          <button class="gallery-item" data-type="video" data-src="../../videos/island-menu.mp4"
+            data-caption="Main menu: a fresh random island every launch, orbited by the menu camera">
+            <span class="gallery-item-media">
+              <video src="../../videos/island-menu.mp4" preload="metadata" muted></video>
+              <span class="gallery-item-play"></span>
+            </span>
+            <span class="gallery-item-caption">Main menu: a fresh random island every launch, orbited by the menu
+              camera</span>
+          </button>
+          <button class="gallery-item" data-type="image"
+            data-src="../../images/island/CoconutPalm_game_01_coast.avif"
+            data-caption="Coastline with palms and shore foam">
+            <span class="gallery-item-media">
+              <img src="../../images/island/CoconutPalm_game_01_coast.avif" alt="Coastline with palms and shore foam"
+                loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Coastline with palms and shore foam</span>
+          </button>
+          <button class="gallery-item" data-type="image"
+            data-src="../../images/island/CoconutPalm_game_03_grove.avif"
+            data-caption="Palm grove on the generated terrain">
+            <span class="gallery-item-media">
+              <img src="../../images/island/CoconutPalm_game_03_grove.avif" alt="Palm grove on the generated terrain"
+                loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Palm grove on the generated terrain</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/island/island-model-test-01.avif"
+            data-caption="Model test scene: hut, crate stack and rock">
+            <span class="gallery-item-media">
+              <img src="../../images/island/island-model-test-01.avif"
+                alt="Model test scene: hut, crate stack and rock" loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Model test scene: hut, crate stack and rock</span>
+          </button>
+          <button class="gallery-item" data-type="image" data-src="../../images/island/rock_family_row.avif"
+            data-caption="Rock family, sized against a reference barrel">
+            <span class="gallery-item-media">
+              <img src="../../images/island/rock_family_row.avif" alt="Rock family, sized against a reference barrel"
+                loading="lazy" />
+            </span>
+            <span class="gallery-item-caption">Rock family, sized against a reference barrel</span>
+          </button>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> Godot 4.7 (Mono), C# / .NET 8</li>
+          <li><strong>Platform:</strong> PC (Windows / Linux), Android</li>
+          <li><strong>Tests:</strong> 89 headless tests covering seeds, camera, building and sun math</li>
+          <li><strong>Status:</strong> Pre-alpha, solo project</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="floating-buttons">
+    <a href="#" class="floating-button floating-linkedin" target="_blank" rel="noopener noreferrer"
+      aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="../../scripts/navbar.js"></script>
+  <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
 </head>
 
-<body>
+<body class="project-page">
   <div class="starfield"></div>
   <div id="navbar-sticky">
     <div id="navbar" class="navbar-border">
@@ -72,27 +72,40 @@
 
   <div id="project-detail" class="margin-main">
     <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">i3-eww Dock</h1>
-    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
       Custom desktop dock for i3
     </div>
 
-    <div class="detail-hero margin-bottom-medium">
-      <img src="../../images/I3EwwDock.avif" alt="i3-eww dock screenshot" />
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">eww</span>
+      <span class="detail-badge">Yuck / SCSS</span>
+      <span class="detail-badge">Linux</span>
+      <span class="detail-badge">Released</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <img src="../../images/I3EwwDock.avif" alt="i3-eww dock screenshot" />
+      </div>
     </div>
 
     <div class="detail-panel">
-      <h2 class="detail-heading">About</h2>
-      <p class="detail-text-secondary margin-bottom-medium">
-        A customizable dock and widget setup for the i3 window manager, built with ElKowars wacky
-        widgets (eww). It brings a glanceable, always-on-top dock with system info to a tiling
-        window manager workflow.
-      </p>
-      <h2 class="detail-heading">Details</h2>
-      <ul class="detail-list">
-        <li><strong>Stack:</strong> eww (Yuck, SCSS), shell scripting</li>
-        <li><strong>Platform:</strong> Linux (i3 window manager)</li>
-        <li><strong>Status:</strong> Released</li>
-      </ul>
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          A customizable dock and widget setup for the i3 window manager, built with ElKowars wacky
+          widgets (eww). It brings a glanceable, always-on-top dock with system info to a tiling
+          window manager workflow.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> eww (Yuck, SCSS), shell scripting</li>
+          <li><strong>Platform:</strong> Linux (i3 window manager)</li>
+          <li><strong>Status:</strong> Released</li>
+        </ul>
+      </section>
     </div>
   </div>
 
@@ -116,6 +129,7 @@
 
   <script src="../../scripts/navbar.js"></script>
   <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
 </head>
 
-<body>
+<body class="project-page" style="--accent-h: 205">
   <div class="starfield"></div>
   <div id="navbar-sticky">
     <div id="navbar" class="navbar-border">
@@ -72,27 +72,53 @@
 
   <div id="project-detail" class="margin-main">
     <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Med-Tracker</h1>
-    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
       Medication tracking desktop application
     </div>
 
-    <div class="detail-hero margin-bottom-medium">
-      <img src="../../images/Med-Tracker.avif" alt="Med-Tracker Screenshot" />
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">Rust</span>
+      <span class="detail-badge">Iced</span>
+      <span class="detail-badge">Desktop</span>
+      <span class="detail-badge">Released</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <img src="../../images/Med-Tracker.avif" alt="Med-Tracker Screenshot" />
+      </div>
     </div>
 
     <div class="detail-panel">
-      <h2 class="detail-heading">About</h2>
-      <p class="detail-text-secondary margin-bottom-medium">
-        Med-Tracker is a medication tracking application built with Rust and Iced. It helps you keep
-        track of your medication schedule, log doses and stay on top of your treatment plan with a
-        clean, lightweight desktop interface.
-      </p>
-      <h2 class="detail-heading">Details</h2>
-      <ul class="detail-list">
-        <li><strong>Stack:</strong> Rust, Iced GUI library</li>
-        <li><strong>Platform:</strong> Windows / Linux desktop</li>
-        <li><strong>Status:</strong> Released</li>
-      </ul>
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          Med-Tracker is a medication tracking application built with Rust and Iced. It helps you keep
+          track of your medication schedule, log doses and stay on top of your treatment plan with a
+          clean, lightweight desktop interface.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Highlights</h2>
+        <div class="detail-highlights">
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Native and light</h3>
+            <p class="detail-highlight-text">Written in Rust with Iced, no web runtime underneath.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Doses and schedule</h3>
+            <p class="detail-highlight-text">Log doses and keep the medication schedule in one place.</p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> Rust, Iced GUI library</li>
+          <li><strong>Platform:</strong> Windows / Linux desktop</li>
+          <li><strong>Status:</strong> Released</li>
+        </ul>
+      </section>
     </div>
   </div>
 
@@ -116,6 +142,7 @@
 
   <script src="../../scripts/navbar.js"></script>
   <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
 </body>
 
 </html>

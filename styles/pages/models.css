@@ -1,0 +1,30 @@
+/* ===== Models listing page (pages/model.html) =====
+   Reuses .project_grid-box, .project-box, .project-thumbnail,
+   .project-content and .project-title from styles/index/projects.css;
+   this file only adds the model-specific icon links. */
+
+/* Row of round icon links under the title. */
+.model-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Smaller version of .header-social-link (index header). */
+.model-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(214, 199, 249, 0.12);
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.model-link:hover {
+    background-color: rgba(214, 199, 249, 0.28);
+    transform: translateY(-2px);
+}

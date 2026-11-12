@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../styles/pages/project-detail.css" />
 </head>
 
-<body>
+<body class="project-page" style="--accent-h: 275">
   <div class="starfield"></div>
   <div id="navbar-sticky">
     <div id="navbar" class="navbar-border">
@@ -72,26 +72,52 @@
 
   <div id="project-detail" class="margin-main">
     <h1 class="text-align-center h1-shadow margin-bottom-medium margin-top-large">Portfolio Website</h1>
-    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-large">
+    <div class="text-align-center text-medium text-regular-shadow text-medium-weight margin-bottom-small">
       This very website
     </div>
 
-    <div class="detail-hero margin-bottom-medium">
-      <img src="../../images/Portfolio.avif" alt="Portfolio Website screenshot" />
+    <div class="detail-badges margin-bottom-large">
+      <span class="detail-badge">HTML</span>
+      <span class="detail-badge">CSS</span>
+      <span class="detail-badge">Vanilla JS</span>
+      <span class="detail-badge">Live</span>
+    </div>
+
+    <div class="detail-hero-zone margin-bottom-medium">
+      <div class="detail-hero">
+        <img src="../../images/Portfolio.avif" alt="Portfolio Website screenshot" />
+      </div>
     </div>
 
     <div class="detail-panel">
-      <h2 class="detail-heading">About</h2>
-      <p class="detail-text-secondary margin-bottom-medium">
-        The website you are looking at right now — designed and built from scratch with plain HTML,
-        CSS and JavaScript, with no frameworks.
-      </p>
-      <h2 class="detail-heading">Details</h2>
-      <ul class="detail-list">
-        <li><strong>Stack:</strong> HTML, CSS, vanilla JavaScript</li>
-        <li><strong>Platform:</strong> Web</li>
-        <li><strong>Status:</strong> Live</li>
-      </ul>
+      <section class="detail-section">
+        <h2 class="detail-heading">About</h2>
+        <p class="detail-text-secondary">
+          The website you are looking at right now — designed and built from scratch with plain HTML,
+          CSS and JavaScript, with no frameworks.
+        </p>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Highlights</h2>
+        <div class="detail-highlights">
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">No framework</h3>
+            <p class="detail-highlight-text">Plain HTML, CSS and JavaScript. No build step, served straight from GitHub Pages.</p>
+          </div>
+          <div class="detail-highlight">
+            <h3 class="detail-highlight-title">Starfield</h3>
+            <p class="detail-highlight-text">A drifting, twinkling starfield drawn with box-shadows, turned off under reduced motion.</p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <h2 class="detail-heading">Details</h2>
+        <ul class="detail-list">
+          <li><strong>Stack:</strong> HTML, CSS, vanilla JavaScript</li>
+          <li><strong>Platform:</strong> Web</li>
+          <li><strong>Status:</strong> Live</li>
+        </ul>
+      </section>
     </div>
   </div>
 
@@ -115,6 +141,7 @@
 
   <script src="../../scripts/navbar.js"></script>
   <script src="../../scripts/stars.js"></script>
+  <script src="../../scripts/project-detail.js"></script>
 </body>
 
 </html>
